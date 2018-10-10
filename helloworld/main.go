@@ -1,8 +1,7 @@
 package main
 
-// find /usr/local/go -iname "print.go"
-import "fmt"
+import "github.com/ahetmanski/gocourse/helloworld/hello"
 
 func main() {
-	fmt.Println("Hello, World!")
+	hello.Hello("World")
 }
