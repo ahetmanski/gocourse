@@ -2,6 +2,6 @@ package hello
 
 import "fmt"
 
-func Hello(name string) {
-	fmt.Printf("Hello, %s!", name)
+func Hello(arch string) {
+	fmt.Printf("Hello linux running on %s!\n", arch)
 }
