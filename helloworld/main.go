@@ -1,7 +1,11 @@
 package main
 
-import "github.com/ahetmanski/gocourse/helloworld/hello"
+import (
+	"runtime"
+
+	"github.com/ahetmanski/gocourse/helloworld/hello"
+)
 
 func main() {
-	hello.Hello("World")
+	hello.Hello(runtime.GOARCH)
 }
