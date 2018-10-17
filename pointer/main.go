@@ -6,7 +6,11 @@ func main() {
 	var sampleVariable int = 140
 	var Pointer *int
 
-	fmt.Printf("Uninitialized Pointer stores next address: %v\n", Pointer)
+	if Pointer == nil {
+		fmt.Printf("Uninitialized Pointer stores next address: %v\n", Pointer)
+	} else {
+		fmt.Printf("nil *Pointer\n", *Pointer)
+	}
 
 	Pointer = &sampleVariable
 
