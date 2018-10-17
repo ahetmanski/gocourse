@@ -18,4 +18,10 @@ func main() {
 
 	s3 := make([]int, 10, 100)
 	fmt.Printf("Slice#3 %p, %v, len=%d, cap=%d\n", s3, s3, len(s3), cap(s3))
+
+	const (
+		from, to = 2, 5
+	)
+	s1 = append(s1[:from], s1[to:]...)
+	fmt.Printf("Slice#1 %p, %v, %d, %d\n", s1, s1, len(s1), cap(s1))
 }
