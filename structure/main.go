@@ -18,4 +18,7 @@ func main() {
 
 	alice.age = 51
 	fmt.Println(alice)
+
+	(*alice).age = 62
+	fmt.Println(alice)
 }
