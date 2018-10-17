@@ -6,8 +6,8 @@ import (
 )
 
 type myStruct struct {
-	myFloat float64
 	myBool  bool
+	myFloat float64
 	myInt   int32
 }
 
