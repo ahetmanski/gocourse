@@ -24,4 +24,11 @@ func main() {
 	)
 	s1 = append(s1[:from], s1[to:]...)
 	fmt.Printf("Slice#1 %p, %v, %d, %d\n", s1, s1, len(s1), cap(s1))
+
+	s4 := s1[from:to]
+	fmt.Printf("Before changes %p s1=%v\n", s1, s1)
+	s4[0] = 253
+	s4[1] = 254
+	s4[2] = 255
+	fmt.Printf("After changes %p s1=%v, %p s4=%v\n", s1, s1, s4, s4)
 }
